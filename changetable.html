@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+    <title>js小代码</title>
+    <script>
+        function insCell(){
+            var x=document.getElementById("textwrite");
+            var m=parseInt(parseInt(x.value)/10);
+            var n=parseInt(parseInt(x.value)%10);
+            var y=document.getElementById('mytable').rows[m-1].cells;
+            y[n-1].innerHTML="famous";
+        }
+            </script>
+</head>
+<body>
+<table id="mytable"   border="2" style="text-align: center">
+    <tr >
+        <td>Peter</td>
+        <td>Griffin</td>
+    </tr>
+    <tr>
+        <td>Peter1</td>
+        <td>Griffin1</td>
+    </tr>
+    <tr>
+        <td>Peter2</td>
+        <td>Griffin2</td>
+    </tr>
+    <tr>
+        <td>Peter3</td>
+        <td>Griffin3</td>
+    </tr>
+</table><br>
+<form>
+    <input type="text" id="textwrite"/>
+    <input type="button" id="Click" onclick="insCell()" value="更改第几行第几列单元格内容" />
+</form>
+</body
+></html>
